@@ -14,20 +14,22 @@ header {position: fixed;
   left: 0px;}
 
   header img{height: 80px;
-  }
+    }
 
   .logohead{display: flex;
-  flex-direction: row;}
+    flex-direction: row;
+    align-items: center;}
 
 
   nav {display: flex;
-  flex-direction: row;
-  align-items: center;}
+    flex-direction: row;
+    align-items: center;}
 
   a {text-decoration: none;
-  margin: .5em;}
+    margin: .5em;
+    }
 
-
+  a:visited{color: black;}
 
 
 
@@ -38,24 +40,26 @@ body{display: flex;
   position: relative;
   left: 0px;
   width: 100%;
-  top: 80px;
-  background-color: dimgrey;}
+  top: 80px;}
+
 
 /* homepage*/
-  .banner{position: relative;
+  .banner{display: flex;
+    position: relative;
     top: 0px;
     left: 0px;
     height: 40em;
     width: 100%;
     background-color: SkyBlue;}
 
+    .bnrtext{margin: 2em;}
+
     .slideshow{
       width:80%;
       height: 35em;
-      border: 3px red solid;
       object-fit: contain;
-      margin: 2em;
-    }
+      margin-top: 2em;
+      margin-bottom: 2em;}
 
     .slideshow img{
       width: 100%;
@@ -72,6 +76,7 @@ body{display: flex;
     .boxtitle{height: 4em;
       justify-content: center;
       align-items: center;}
+
     .services{display: flex;
       justify-content: space-between;
       height: 20em;
@@ -114,13 +119,15 @@ body{display: flex;
 
 /*portfolio page*/
 
+
   .box{display: flex;
     width: 90%;
     position: relative;
     top: 8px;
     z-index: 0;
     justify-content: space-around;
-    margin-bottom: 5em;}
+    margin-bottom: 5em;
+    background-color: white;}
 
     .polaroid{display: flex;
       flex-direction: column;
@@ -132,6 +139,7 @@ body{display: flex;
       align-items: center;
       box-shadow: -.5em .5em 2em grey;
       transition: transform .5s;
+      background-color: white;
       }
 
 
@@ -146,7 +154,22 @@ body{display: flex;
 
     .polaroid:hover{
       transform: scale(1.1);
-    }
+      }
+
+    .banner2{display: flex;
+      height: 3em;
+      width: 80%;
+      background-color: cornsilk;
+      justify-content: center;
+      }
+
+/*Services*/
+
+  .vidnode{width:30%;}
+
+
+
+
 
 
 
@@ -160,6 +183,6 @@ body{display: flex;
     margin-top: 3em;
     background-color: lightgrey;}
 
-  footer img{
-    width:5em;
-    height: 5em;}
+    footer img{
+      width:5em;
+      height: 5em;}
