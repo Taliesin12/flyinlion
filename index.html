@@ -21,7 +21,28 @@
       </nav>
     </header>
     <div class="banner">
-      <h1>Flyin Lion Digital Marketing</h1>
+      <div class="slideshow" >
+        <img class="mySlides" src="./resources/images/camera-drone-flying-724921.jpg" style="width:100%">
+        <img class="mySlides" src="./resources/images/building-downtown-house-36362.jpg" style="width:100%">
+        <img class="mySlides" src="./resources/images/beautifuldrive.jpg" style="width:100%">
+      </div>
+
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
     </div>
     <div class="about">
       <h3>name and story</h3>
