@@ -27,47 +27,57 @@
         <img class="mySlides" src="./resources/images/beautifuldrive.jpg" style="width:100%">
       </div>
 
-  <script>
-  var myIndex = 0;
-  carousel();
+      <script>
+        var myIndex = 0;
+        carousel();
 
-  function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}
-      x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-  }
-  </script>
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+      </script>
+      <div class="">
+
+      </div>
     </div>
     <div class="about">
       <h3>name and story</h3>
       <h3>values</h3>
     </div>
-    <div class="services">
-      <div class="servleft">
-        <img src="./resources/images/camera-drone-flying-724921.jpg" alt="">
+    <div class="box2">
+      <div class="boxtitle">
+        <h2>Services</h2>
+      </div>
+      <div class="services">
+
+        <div class="servleft">
+          <img src="./resources/images/camera-drone-flying-724921.jpg" alt="">
+
+        </div>
+        <div class="servright">
+          <div class="node">
+            <img src="./resources/images/msplogo.png" alt="">
+            <p>This is where we write something</p>
+          </div>
+          <div class="node">
+            <img src="./resources/images/building-downtown-house-36362.jpg" alt="">
+            <p>write something else</p>
+          </div>
+        </div>
 
       </div>
-      <div class="servright">
-        <div class="node">
-          <img src="./resources/images/msplogo.png" alt="">
-          <p>This is where we write something</p>
-        </div>
-        <div class="node">
-          <img src="./resources/images/building-downtown-house-36362.jpg" alt="">
-          <p>write something else</p>
-        </div>
-      </div>
-
     </div>
     <div class="portfolio">
       <h3>growing</h3>
     </div>
+    
     <div class="contact">
 
     </div>
