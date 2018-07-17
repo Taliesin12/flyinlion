@@ -1,4 +1,5 @@
-* { margin:0; padding:0; }
+* { margin:0; padding:0;
+  font-family: Helvetica;}
 
 
 header {position: fixed;
@@ -30,7 +31,6 @@ header {position: fixed;
 
   a:visited{color: black;}
   a:link{color: black;}
-  a:hover{color: white;}
 
 
 
@@ -69,7 +69,9 @@ body{display: flex;
       margin-top: 2em;
       margin-bottom: 2em;
       padding: 1em;
-      border-radius: 10px;}
+      border-radius: 10px;
+      box-shadow: -.5em .5em 2em grey;
+}
 
     .slideshow img{
       width: 100%;
@@ -80,7 +82,7 @@ body{display: flex;
       flex-direction: column;
       width: 80%;
       align-items: center;
-      background-color:#50661d;
+      background-color:#b9c2c7;
         }
 
     .about{display: flex;
@@ -103,7 +105,7 @@ body{display: flex;
       align-items: center;
       justify-content: center;
       width: 45%;
-      border: 2px green solid;}
+      }
 
       .servleft img{width: 80%;}
 
@@ -111,7 +113,8 @@ body{display: flex;
         flex-direction: column;
         width: 50%;
         justify-content: space-around;
-        border: 2px red solid;
+        border-left: 1px darkgrey solid;
+        padding-left: 1.5em;
         }
 
       .node{display: flex;
@@ -119,8 +122,11 @@ body{display: flex;
         height: 9em;}
 
       .node img{width: 20%;
+        object-fit: cover;
+        margin: .5em;
         }
 
+      .node p{margin: 1em;}
 
 
 /* this is temporary */
@@ -174,10 +180,12 @@ body{display: flex;
         }
 
     .banner2{display: flex;
+      flex-direction: column;
       height: 3em;
       width: 80%;
       background-color: inherit;
       justify-content: center;
+      align-items: center;
       margin: 3em;
       }
 
@@ -188,15 +196,31 @@ body{display: flex;
     justify-content: center;
     align-items: center;}
 
+    .listbox{display: flex;}
 
+    .list{
+      margin: 3em;
+    }
 
-
+    .servbox{width: 80%;
+    margin: 3em;}
 
 
 /*Prices*/
 
 
-  table{width: 60%;}
+  table{width: 60%;
+    border-collapse: collapse;}
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
 
 
 
