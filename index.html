@@ -7,20 +7,39 @@
   </head>
 
   <body>
+
     <header>
       <div class="logohead">
         <img src="./resources/images/msplogo.png" alt="">
-        <h1>Flyin Lion Digital Marketing</h1>
+        <a href="./index.html"><h1>Flyin Lion Digital Marketing</h1></a>
       </div>
       <nav>
         <a href="./index.html">Home</a>
         <a href="./about.html">About</a>
         <a href="./services.html">Services</a>
         <a href="./portfolio.html">Portfolio</a>
-        <a href="./contact.html">Contact</a>
+        <a href="./prices.html">Pricing</a>
       </nav>
     </header>
+
+    <div class="notes">
+      <ol>
+        <li>change colors</li>
+        <li>remove borders</li>
+        <li>add links</li>
+        <li>change pictures</li>
+        <li>remove excess</li>
+        <li>change font</li>
+        <li>remove notes</li>
+      </ol>
+    </div>
+
     <div class="banner">
+      <div class="bnrtext">
+        <h2>Welcome to Flyin Lion Digital Marketing!</h2>
+        <br>
+        <p>We are a husband and wife duo, who believe in authenticity and superb service. We are dedicated to making your experience exceptional, and shining light upon the opportunities you have to offer.</p>
+      </div>
       <div class="slideshow" >
         <img class="mySlides" src="./resources/images/camera-drone-flying-724921.jpg" style="width:100%">
         <img class="mySlides" src="./resources/images/building-downtown-house-36362.jpg" style="width:100%">
@@ -40,18 +59,20 @@
           myIndex++;
           if (myIndex > x.length) {myIndex = 1}
           x[myIndex-1].style.display = "block";
-          setTimeout(carousel, 2000); // Change image every 2 seconds
+          setTimeout(carousel, 4000); // Change image every 2 seconds
         }
       </script>
-      <div class="bnrtext">
-        <h2>this is the title</h2>
-        <p>write something here</p>
-      </div>
+
 
 
     </div>
     <div class="about">
-      <h3>name and story</h3>
+      <div class="boxtitle">
+        <h2>Name</h2>
+      </div>
+      <h3>Our name was inspired by the Pi Xiu 貔貅, a mythological winged lion. The Pi Xiu was a servant who would fly out to retrieve treasures for their masters. Our digital marketing should feel like your very own Pi Xiu—that’s our goal. And we plan to do this through the power of authenticity.
+        Here at Flyin Lion we offer a unique digital marketing experience with the aid of virtual reality and aerial views. We currently specialize in Matterport Scans and drone services. These services can be used for showcasing real estate, event centers, and a myriad of other venues and locations, as well as for practical uses in aiding construction and agriculture.
+      </h3>
       <h3>values</h3>
     </div>
     <div class="box2">
@@ -67,11 +88,12 @@
         <div class="servright">
           <div class="node">
             <img src="./resources/images/msplogo.png" alt="">
-            <p>This is where we write something</p>
+            <p>Matterport is a 3D camera, which takes 360 degree still images that are then stitched together, creating a virtual tour.
+            </p>
           </div>
           <div class="node">
             <img src="./resources/images/building-downtown-house-36362.jpg" alt="">
-            <p>write something else</p>
+            <p>Drone deploy uses drone photography to digitally reconstruct real-world spaces for use on the web. The 3D models from this kind of photography helps with practical planning in work such as construction and agriculture.</p>
           </div>
         </div>
 

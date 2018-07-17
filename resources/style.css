@@ -7,8 +7,7 @@ header {position: fixed;
   flex-direction: row;
   justify-content: space-between;
   height: 80px;
-  border: 2px solid blue;
-  background-color: white;
+  background-color: #31708E;
   z-index: 1;
   top: 0px;
   left: 0px;}
@@ -30,7 +29,8 @@ header {position: fixed;
     }
 
   a:visited{color: black;}
-
+  a:link{color: black;}
+  a:hover{color: white;}
 
 
 
@@ -40,26 +40,36 @@ body{display: flex;
   position: relative;
   left: 0px;
   width: 100%;
-  top: 80px;}
+  top: 80px;
+  background-image: url("./images/brickwall_@2X.png");
+  min-height: 80%;}
 
 
 /* homepage*/
   .banner{display: flex;
+    flex-direction: column;
     position: relative;
+    align-items: center;
     top: 0px;
     left: 0px;
-    height: 40em;
     width: 100%;
-    background-color: SkyBlue;}
+    background-color: inherit;
+    justify-content: space-between;}
 
-    .bnrtext{margin: 2em;}
+    .bnrtext{margin: 2em;
+    width: 50%;
+    text-align: center;
+    }
 
     .slideshow{
-      width:80%;
+      width:70%;
       height: 35em;
       object-fit: contain;
+      background-color: white;
       margin-top: 2em;
-      margin-bottom: 2em;}
+      margin-bottom: 2em;
+      padding: 1em;
+      border-radius: 10px;}
 
     .slideshow img{
       width: 100%;
@@ -70,8 +80,14 @@ body{display: flex;
       flex-direction: column;
       width: 80%;
       align-items: center;
-      background-color: cornsilk;
+      background-color:#50661d;
         }
+
+    .about{display: flex;
+      flex-direction: column;
+      width: 70%;
+      background: inherit;
+      margin: 3em;}
 
     .boxtitle{height: 4em;
       justify-content: center;
@@ -80,7 +96,8 @@ body{display: flex;
     .services{display: flex;
       justify-content: space-between;
       height: 20em;
-      width: 100%;}
+      width: 100%;
+      margin: 2em;}
 
     .servleft{display: flex;
       align-items: center;
@@ -127,7 +144,7 @@ body{display: flex;
     z-index: 0;
     justify-content: space-around;
     margin-bottom: 5em;
-    background-color: white;}
+    background-color: inherit;}
 
     .polaroid{display: flex;
       flex-direction: column;
@@ -143,32 +160,43 @@ body{display: flex;
       }
 
 
-    .polaroid iframe, .polaroid img{
-      width: 20em;
-      height: 20em;
-      object-fit: cover;
-      }
+      .polaroid img{
+        width: 20em;
+        height: 20em;
+        object-fit: cover;
+        }
 
-    .polotext{width: 20em;
-      height: 6em;}
+      .polotext{width: 20em;
+        height: 6em;}
 
-    .polaroid:hover{
-      transform: scale(1.1);
-      }
+      .polaroid:hover{
+        transform: scale(1.1);
+        }
 
     .banner2{display: flex;
       height: 3em;
       width: 80%;
-      background-color: cornsilk;
+      background-color: inherit;
       justify-content: center;
+      margin: 3em;
       }
 
 /*Services*/
 
-  .vidnode{width:30%;}
+  .resources{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
 
 
 
+
+
+
+/*Prices*/
+
+
+  table{width: 60%;}
 
 
 
@@ -179,9 +207,10 @@ body{display: flex;
     justify-content: space-between;
     width: 100%;
     height: 5em;
-    border: green solid 2px;
     margin-top: 3em;
-    background-color: lightgrey;}
+    background-color: #b9c2c7;
+
+    }
 
     footer img{
       width:5em;
